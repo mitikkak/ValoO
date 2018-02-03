@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
+<!--
     <SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,60 +28,57 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+-->
     <TextView
+        android:id="@+id/response"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Brightness"
-        android:id="@+id/textView3"
-        android:layout_marginTop="42dp"
-        android:layout_below="@+id/button3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="42dp"
+        android:text="Nodes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ON"
+        android:text="Scan"
         android:id="@+id/button2"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/seekBar"
-        android:layout_alignEnd="@+id/seekBar" />
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OFF"
+        android:text="Clear"
         android:id="@+id/button3"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/button2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Disconnect"
         android:id="@+id/button4"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lumn"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_toRightOf="@+id/button4"
-        android:layout_marginLeft="6dp"
-        android:layout_marginStart="6dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_above="@+id/seekBar" />
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+
+    <ListView
+        android:id="@+id/responseViewer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/response"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>
